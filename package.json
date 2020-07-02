@@ -1,0 +1,27 @@
+{
+  "name": "launcher-mc",
+  "version": "1.0.0",
+  "description": "An minecraft launcher based on MCLC",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-builder . -W",
+    "build-mac": "electron-builder . -M",
+    "build-lin": "electron-builder . -L"
+  },
+  "author": "SlashDev",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.0.5",
+    "electron-builder": "^22.7.0"
+  },
+  "build": {
+    "appId": "fr.slashdev.launcher"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "izitoast": "^1.4.0",
+    "minecraft-launcher-core": "^3.14.2"
+  }
+}
